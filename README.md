@@ -53,17 +53,3 @@ This project simulates that exact tension: 600 customers, ~38,600 transactions o
 
 **Honest limitation, stated directly in the report:** performance here (ROC-AUC > 0.999) is unusually strong because the synthetic fraud signal was deliberately made learnable. Real transaction data has more overlap between fraud and legitimate behavior; this project demonstrates the method and pipeline, not a production-ready accuracy claim.
 
-## How to Reproduce
-```
-python3 01_generate_data.py
-python3 02_feature_engineering.py
-python3 03_rule_based_scoring.py
-python3 04_train_models.py
-python3 05_generate_charts.py
-python3 06_build_report.py
-```
-Each script writes its output as a CSV consumed by the next step. Running all six in order regenerates the full pipeline and the final Excel report.
-
-## Author
-[Your Name] — Data Analyst
-[LinkedIn] · [Portfolio site] · [Email]
